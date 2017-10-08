@@ -1,0 +1,8 @@
+<h1>All Employees</h1>
+
+<% @employees.each do |employee| %>
+  <h2><a href="/employees/<%= employee.id %>"><%= employee.full_name %></a></h2>
+  <h2><%= employee.email %></h2>
+  <h2><%= employee.friendly_birthday %></h2>
+  <br>
+<% end %>
